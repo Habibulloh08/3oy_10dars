@@ -1,0 +1,414 @@
+.brends {
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-image: url(../../img/Ellipse\ 2.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  .container {
+    @include container();
+    .brends-title {
+      text-align: center;
+      h2 {
+        @include h2();
+      }
+    }
+    .brends-blocks1 {
+      margin-top: 30px;
+      width: $width;
+      height: 132px;
+      background: #317ac1;
+      border: 2px solid #f5f8fc;
+      border-radius: 28px;
+      @include display();
+      justify-content: space-around;
+      &_card {
+        width: 388px;
+        height: 64px;
+        background: #ffffff;
+        border-bottom: 2px solid rgba(56, 68, 84, 0.3);
+        border-radius: 17px;
+        @include display();
+        justify-content: center;
+        cursor: pointer;
+        h3 {
+          @include h3();
+          width: 80%;
+        }
+      }
+    }
+    .brends-blocks2 {
+      width: $width;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      &_card {
+        width: 400px;
+        height: 1343px;
+        background: #ffffff;
+        border: 2px solid #f5f8fc;
+        border-radius: 28px;
+        @include display();
+        justify-content: space-evenly;
+        row-gap: 20px;
+        flex-direction: column;
+
+        &__btn1 {
+          width: 85%;
+          height: 60px;
+          background: #ffffff;
+          border: 2px solid #e1a624;
+          border-radius: 17px;
+          @include p();
+          color: #e1a624;
+          cursor: pointer;
+        }
+        p {
+          width: 85%;
+          @include p();
+        }
+        &__content {
+          width: 80%;
+          height: 305px;
+          background: #f5f8fc;
+          border-bottom: 1px solid rgba(29, 47, 65, 0.04);
+          box-shadow: 0px 2px 9px rgba(74, 99, 122, 0.15);
+          border-radius: 16px 16px 24px 24px;
+          display: flex;
+          justify-content: space-around;
+          cursor: pointer;
+          &--left {
+            width: 50%;
+            .left-title {
+              width: $width;
+              @include display();
+              justify-content: center;
+              border-right: 1px solid #edf1f5;
+              background: #ffffff;
+              height: 50px;
+              background: rgba(255, 255, 255, 0.7);
+              border-radius: 16px 0px 0px 0px;
+              h3 {
+                @include h3();
+                color: #6fd73e;
+              }
+            }
+            .left-box {
+              width: $width;
+              @include display();
+              flex-direction: column;
+              justify-content: center;
+              height: 85px;
+              border-bottom: 1px solid white;
+              border-right: 1px solid white;
+              row-gap: 10px;
+              &_icon {
+                width: 14px;
+                height: 14px;
+                background: #6fd73e;
+                border-radius: 4px;
+                @include display();
+                justify-content: center;
+              }
+              &_text {
+                width: 90%;
+                text-align: center;
+
+                p {
+                  @include p();
+                  font-weight: 400;
+                  font-size: 11px;
+                  line-height: 140%;
+                  color: #384454;
+                }
+              }
+            }
+          }
+          &--right {
+            width: 50%;
+            .right-title {
+              width: $width;
+              @include display();
+              justify-content: center;
+              border-left: 1px solid #edf1f5;
+              background: #ffffff;
+              height: 50px;
+              background: rgba(255, 255, 255, 0.7);
+              border-radius: 0px 16px 0px 0px;
+              h3 {
+                background: #ffffff;
+                color: #eb5c1f;
+              }
+            }
+            .right-box {
+              width: $width;
+              @include display();
+              flex-direction: column;
+              justify-content: center;
+              height: 85px;
+              border-bottom: 1px solid white;
+              border-left: 1px solid white;
+              row-gap: 10px;
+              text-align: center;
+
+              &_icon {
+                width: 14px;
+                height: 14px;
+                background: rgba(235, 92, 31, 1);
+                border-radius: 4px;
+                @include display();
+                justify-content: center;
+              }
+              &_text {
+                width: 100%;
+                text-align: center;
+                padding-left: 10px;
+                p {
+                  @include p();
+                  font-weight: 400;
+                  font-size: 11px;
+                  line-height: 140%;
+                  color: #384454;
+                }
+              }
+            }
+          }
+        }
+        &__btn2 {
+          @include btn();
+          @include p();
+          color: white;
+          cursor: pointer;
+          width: 85%;
+          height: 60px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:1300px) {
+    .brends{
+        width: 100%;
+        .container{
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+  .brends {
+    width: 100%;
+    .container {
+      width: 100%;
+      .brends-title {
+        text-align: center;
+        h2 {
+          font-size: 26px;
+          line-height: 31px;
+        }
+      }
+      .brends-blocks1 {
+        height: 96px;
+        &_card {
+          width: 220px;
+          height: 48px;
+
+          h3 {
+            font-size: 10px;
+            line-height: 12px;
+          }
+        }
+      }
+      .brends-blocks2 {
+        &_card {
+          width: 216px;
+          height: 1219px;
+
+          img {
+            width: 90%;
+            height: 64px;
+          }
+          &__btn1 {
+            width: 85%;
+            height: 48px;
+          }
+          p {
+            font-size: 12px;
+            line-height: 130%;
+          }
+          &__content {
+            width: 80%;
+            height: 307px;
+
+            &--left {
+              width: 50%;
+              .left-title {
+                height: 44px;
+                h3 {
+                  font-size: 8px;
+                  line-height: 120%;
+                }
+              }
+              .left-box {
+                width: $width;
+                height: 87px;
+                row-gap: 8px;
+                &_text {
+                  width: 100%;
+                  font-size: 8px;
+                  line-height: 120%;
+
+                  p {
+                    font-size: 8px;
+                    line-height: 120%;
+                  }
+                }
+              }
+            }
+            &--right {
+              width: 50%;
+              .right-title {
+                height: 44px;
+
+                h3 {
+                  font-size: 8px;
+                  line-height: 120%;
+                }
+              }
+              .right-box {
+                width: $width;
+                height: 87px;
+                row-gap: 8px;
+                &_text {
+                    width: 100%;
+                    font-size: 8px;
+                    line-height: 120%;
+                  p {
+                    font-size: 8px;
+                    line-height: 120%;
+                  }
+                }
+              }
+            }
+          }
+          &__btn2 {
+            width: 85%;
+            height: 48px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+    .brends {
+      width: 100%;
+      .container {
+        width: 100%;
+        .brends-title {
+          text-align: center;
+          h2 {
+            font-size: 26px;
+            line-height: 31px;
+          }
+        }
+        .brends-blocks1 {
+            flex-direction: column;
+            margin: 10px auto;
+            width: 288px;
+          height: 210px;
+          &_card {
+            width: 85%;
+            height: 48px;
+  
+            h3 {
+              font-size: 10px;
+              line-height: 12px;
+            }
+          }
+        }
+        .brends-blocks2 {
+            flex-direction: column;
+            align-items:center;
+            row-gap: 20px;
+          &_card {
+            width: 288px;
+            height: 1219px;
+  
+            img {
+              width: 95%;
+              height: 64px;
+            }
+            &__btn1 {
+              width: 82%;
+              height: 48px;
+            }
+            p {
+              font-size: 12px;
+              line-height: 130%;
+            }
+            &__content {
+              width: 80%;
+              height: 307px;
+  
+              &--left {
+                width: 50%;
+                .left-title {
+                  height: 44px;
+                  h3 {
+                    font-size: 8px;
+                    line-height: 120%;
+                  }
+                }
+                .left-box {
+                  width: $width;
+                  height: 87px;
+                  row-gap: 8px;
+                  &_text {
+                    width: 100%;
+                    font-size: 8px;
+                    line-height: 120%;
+  
+                    p {
+                      font-size: 8px;
+                      line-height: 120%;
+                    }
+                  }
+                }
+              }
+              &--right {
+                width: 50%;
+                .right-title {
+                  height: 44px;
+  
+                  h3 {
+                    font-size: 8px;
+                    line-height: 120%;
+                  }
+                }
+                .right-box {
+                  width: $width;
+                  height: 87px;
+                  row-gap: 8px;
+                  &_text {
+                      width: 100%;
+                      font-size: 8px;
+                      line-height: 120%;
+                    p {
+                      font-size: 8px;
+                      line-height: 120%;
+                    }
+                  }
+                }
+              }
+            }
+            &__btn2 {
+              width: 82%;
+              height: 48px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
